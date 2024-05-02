@@ -1,2 +1,2 @@
 # PaginaWebAbarrotes
- Práctiva Desarrollo de Aplicaciones Web
+ Práctica Desarrollo de Aplicaciones Web
