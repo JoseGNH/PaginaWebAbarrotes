@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes Los Ángeles</title> 
+    <link rel="stylesheet" href="estilo.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="src/logot.png" alt="Logo de Abarrotes Los Ángeles" style="height: auto; width: 60px;">
+                Abarrotes Los Ángeles
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ofertas">Ofertas del día</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#panaderia">Panadería</a></li>
+                                <li><a class="dropdown-item" href="#lacteos">Lácteos</a></li>
+                                <li><a class="dropdown-item" href="#bebidas">Bebidas</a></li>
+                                <li><a class="dropdown-item" href="#cereales">Cereales y Legumbres</a></li>
+                                <li><a class="dropdown-item" href="#enlatados">Enlatados y Conservas</a></li>
+                                <li><a class="dropdown-item" href="#dulces">Dulces y Snacks</a></li>
+                                <li><a class="dropdown-item" href="#limpieza">Productos de Limpieza</a></li>
+                                <li><a class="dropdown-item" href="#cuidado">Cuidado Personal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ubikcion">¿Donde nos ubicamos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.html" target="_blank">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html" target="_blank">Registrarse</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catálogo Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                
+                                <li><a class="dropdown-item" href="RegProd.php">Insertar</a></li>
+                                <li><a class="dropdown-item" href="ModProd.php">Modificar</a></li>
+                                <li><a class="dropdown-item" href="DataTableProductos.php">Consultar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar en Abarrotes Los Ángeles" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </nav>
+
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div id="carouselExampleRide" class="carousel slide w-100" data-bs-ride="true"><!--75-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/CocaCola.jpeg" class="d-block w-100 mx-auto" alt="Im1">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/Dove1.jpeg" class="d-block w-100 mx-auto" alt="Im2">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/Cloroslider3.png" class="d-block w-100 mx-auto" alt="Im3">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/GoyaFrojoles.jpeg" class="d-block w-100 mx-auto" alt="Im4">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/Snikersss.jpeg" class="d-block w-100 mx-auto" alt="Im5">
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    
+    <header>
+        <ul>
+            <!-- Imágenes -->
+            <div style="background-color: rgba(255, 255, 255, 0.8); padding: 10px;">
+                <p>Bienvenido a <strong>"Los Ángeles"</strong>, tu destino confiable para
+                    satisfacer
+                    todas tus necesidades de abarrotes con excelencia y atención
+                    personalizada. En nuestra tienda, nos enorgullece ofrecer una
+                    amplia variedad de productos de alta calidad, desde alimentos
+                    frescos y productos básicos hasta deliciosos snacks y productos
+                    de limpieza. En <strong>"Los Ángeles"</strong>, cada producto ha sido
+                    cuidadosamente seleccionado para garantizar la frescura y
+                    calidad que mereces. Nuestro compromiso con la satisfacción del
+                    cliente se refleja en la atención personalizada que brindamos a
+                    cada cliente, ayudándote a encontrar exactamente lo que necesitas.
+                    <Strong>Puedes escuchar un poco de música dando clic en el 
+                        triangulo del reproductor de música.</Strong>
+                </p>
+                <audio controls>
+                    <source src="src/Musica1.mpeg" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </ul>
+    </header>
+    <h1>Categorías</h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <!-- Enlaces a las categorías con imágenes -->
+                            <li>
+                                <a href="#panaderia">
+                                    <img class="img-fluid" src="src/Panaderia.jpg" alt="Panadería"> 
+                                    <div class="capa">
+                                        <h3>Panadería</h3>
+                                        <p>Descubre una variedad de deliciosos panes frescos en nuestra sección de panadería.</p>
+                                    </div>
+                                    <span>Panadería</span>
+                                </a>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <li>
+                                <a href="#lacteos">
+                                    <img src="src/Lacteos.jpg" alt="Lácteos" >
+                                    <div class="capa">
+                                        <h3>Lácteos</h3>
+                                        <p>Explora nuestra selección de productos lácteos frescos y nutritivos en esta sección dedicada.</p> 
+                                    </div>
+                                    <span>Lácteos</span>
+                                </a>
+                            </li>
+                            <!-- Repite para otras categorías según sea necesario -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <li>
+                                <a href="#bebidas">
+                                    <img src="src/Bebidas.jpg" alt="Bebidas" >
+                                    <div class="capa">
+                                        <h3>Bebidas</h3>
+                                        <p>Descubre una amplia variedad de refrescantes bebidas para satisfacer tu sed en esta sección especializada.</p>
+                                    </div>
+                                    <span>Bebidas</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <!-- Segundo conjunto-->
+                            <li>
+                                <a href="#cereales">
+                                    <img class="img-fluid" src="src/CerealesyLegumbres.jpg" alt="Cereales y Legumbres">
+                                    <div class="capa">
+                                        <h3>Cereales y Legumbres</h3>
+                                        <p>Descubre una amplia variedad de cereales y legumbres nutritivos y saludables en esta sección especializada.</p>
+                                    </div>
+                                    <span>Cereales y Legumbres</span>
+                                </a>
+                            </li>
+                            <!-- Repite para otras categorías según sea necesario -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <li>
+                                <a href="#enlatados">
+                                    <img src="src/EnlatadosyConservas.png" alt="Enlatados y Conservas">
+                                    <div class="capa">
+                                        <h3>Enlatados</h3>
+                                        <p>Explora una variedad de alimentos enlatados y conservas para una conveniencia duradera en esta sección especializada.</p>
+                                    </div>
+                                    <span>Enlatados y Conservas</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <li>
+                                <a href="#dulces">
+                                    <img src="src/DulcesySnaks.jpg" alt="Dulces y Snacks">
+                                    <div class="capa">
+                                        <h3>Dulces</h3>
+                                        <p>Explora una deliciosa variedad de dulces y snacks que satisfarán tu antojo en esta sección especializada.</p>
+                                    </div>
+                                    <span>Dulces y Snacks</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <li>
+                                <a href="#limpieza">
+                                    <img src="src/ProdLimpieza.jpg" alt="Productos de Limpieza">
+                                    <div class="capa">
+                                        <h3>Limpieza</h3>
+                                        <p>Descubre una amplia gama de productos de limpieza para mantener tu hogar impecable y saludable en esta sección especializada.</p>
+                                    </div>
+                                    <span>Productos de Limpieza</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="categorias">
+                        <ul>
+                            <li>
+                                <a href="#cuidado">
+                                    <img src="src/CuidadoPersonal.jpg" alt="Cuidado Personal">
+                                    <div class="capa">
+                                        <h3>Cuidado Personal</h3> 
+                                        <p>Descubre una amplia selección de productos para el cuidado personal que te ayudarán a mantenerte saludable y radiante en esta sección especializada.</p> 
+                                    </div>
+                                    <span>Cuidado Personal</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <h1 id="ofertas">Ofertas del día</h1>
+    <header>
+        <div class="container">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" preload controls loop poster="src/SupOf.png" width="100%">
+                    <source src="src/Video1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    
+    
+    <h1 id="productos">Tablas de Productos</h1>
+
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushPanaderia">
+            <h2 id="panaderia">Panadería</h2>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePanaderia" aria-expanded="false" aria-controls="flush-collapsePanaderia">
+                        <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de panadería!</strong></p> 
+                    </button> 
+                </h2>
+                <div id="flush-collapsePanaderia" class="accordion-collapse collapse" data-bs-parent="#accordionFlushPanaderia">
+                    <div class="accordion-body"> 
+                        <p>
+                            A continuación, te presentamos nuestra variada selección de panes frescos y deliciosos. Esperamos que encuentres justo
+                            lo que estás buscando para satisfacer tus antojos de pan.</p>
+                    </div>
+                </div>
+            </div>
+        
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <!-- Panadería -->
+            <tr>
+                <td>Pan blanco (Wonder Bread)</td>
+                <td>Pieza</td>
+                <td>2.99</td>
+                <td>50</td>
+                <td>Pan blanco de la marca Wonder Bread</td>
+            </tr>
+            <tr>
+                <td>Pan integral (Nature's Own)</td>
+                <td>Pieza</td>
+                <td>3.49</td>
+                <td>40</td>
+                <td>Pan integral de la marca Nature's Own</td>
+            </tr>
+            <tr>
+                <td>Bollos (Sara Lee)</td>
+                <td>Pieza</td>
+                <td>1.99</td>
+                <td>30</td>
+                <td>Bollos de la marca Sara Lee</td>
+            </tr>
+            <tr>
+                <td>Pasteles (Entenmann's)</td>
+                <td>Pieza</td>
+                <td>4.99</td>
+                <td>20</td>
+                <td>Pasteles de la marca Entenmann's</td>
+            </tr>
+        </table>        
+
+        <h2 id="cuidado">Cuidado Personal</h2>
+        <div class="accordion accordion-flush" id="accordionFlushCuidado">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCuidado" aria-expanded="false" aria-controls="flush-collapseCuidado">
+                    <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de cuidado personal!</strong></p> 
+                </button> 
+              </h2>
+              <div id="flush-collapseCuidado" class="accordion-collapse collapse" data-bs-parent="#accordionFlushCuidado">
+                    <div class="accordion-body"> 
+                        <p>  Descubre nuestra selección de productos
+                            diseñados para tu bienestar y belleza. 
+                            Desde cuidado del cabello hasta artículos 
+                            de higiene personal, tenemos lo que 
+                            necesitas para sentirte y lucir mejor.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cuidado Personal -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Pasta de dientes (Colgate)</td>
+                <td>Tubo</td>
+                <td>1.79</td>
+                <td>40</td>
+                <td>Pasta de dientes de la marca Colgate</td>
+            </tr>
+            <tr>
+                <td>Champú (Pantene)</td>
+                <td>Botella</td>
+                <td>3.29</td>
+                <td>30</td>
+                <td>Champú de la marca Pantene</td>
+            </tr>
+            <tr>
+                <td>Jabón de baño (Dove)</td>
+                <td>Barra</td>
+                <td>2.99</td>
+                <td>25</td>
+                <td>Jabón de baño de la marca Dove</td>
+            </tr>
+            <tr>
+                <td>Papel higiénico (Charmin)</td>
+                <td>Rollo</td>
+                <td>0.99</td>
+                <td>50</td>
+                <td>Papel higiénico de la marca Charmin</td>
+            </tr>
+        </table>
+
+        <h2 id="bebidas">Bebidas</h2>
+        <div class="accordion accordion-flush" id="accordionFlushBebidas">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBebidas" aria-expanded="false" aria-controls="flush-collapseBebidas">
+                    <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de bebidas!</strong></p> 
+                </button>
+              </h2>
+              <div id="flush-collapseBebidas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushBebidas">
+                <div class="accordion-body"> 
+                    <p>
+                Explora nuestra amplia selección de bebidas refrescantes
+                 y deliciosas. Desde bebidas energéticas hasta jugos
+                  naturales y refrescos, tenemos opciones para satisfacer 
+                  todos los gustos. Encuentra tus bebidas favoritas y disfruta 
+                  de momentos refrescantes en cualquier momento del día. ¡Salud!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Bebidas -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Agua embotellada (Dasani)</td>
+                <td>Litro</td>
+                <td>0.75</td>
+                <td>100</td>
+                <td>Agua embotellada de la marca Dasani</td>
+            </tr>
+            <tr>
+                <td>Refrescos (Coca-Cola)</td>
+                <td>Litro</td>
+                <td>1.25</td>
+                <td>80</td>
+                <td>Refrescos de la marca Coca-Cola</td>
+            </tr>
+            <tr>
+                <td>Jugos (Tropicana)</td>
+                <td>Litro</td>
+                <td>2.49</td>
+                <td>40</td>
+                <td>Jugos de la marca Tropicana</td>
+            </tr>
+        </table>
+
+        <h2 id="cereales">Cereales y Legumbres</h2>
+        <div class="accordion accordion-flush" id="accordionFlushCereales">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCereales" aria-expanded="false" aria-controls="flush-collapseCereales">
+                    <p><strong>¡Bienvenido a nuestra sección de cereales y legumbres!</strong></p> 
+                </button>
+              </h2>
+              <div id="flush-collapseCereales" class="accordion-collapse collapse" data-bs-parent="#accordionFlushCereales">
+                <div class="accordion-body"> 
+                    <p>
+                        Descubre nuestra amplia variedad de 
+                        cereales nutritivos y legumbres ricas 
+                        en proteínas. Encuentra tus productos 
+                        favoritos y disfruta de comidas sabrosas
+                        y nutritivas en casa.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Cereales y Legumbres -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Arroz (Uncle Ben's)</td>
+                <td>Kilo</td>
+                <td>2.99</td>
+                <td>25</td>
+                <td>Arroz de la marca Uncle Ben's</td>
+            </tr>
+            <tr>
+                <td>Frijoles (Goya)</td>
+                <td>Kilo</td>
+                <td>1.50</td>
+                <td>30</td>
+                <td>Frijoles de la marca Goya</td>
+            </tr>
+            <tr>
+                <td>Lentejas (Bob's Red Mill)</td>
+                <td>Kilo</td>
+                <td>3.99</td>
+                <td>15</td>
+                <td>Lentejas de la marca Bob's Red Mill</td>
+            </tr>
+            <tr>
+                <td>Avena (Quaker)</td>
+                <td>Kilo</td>
+                <td>2.00</td>
+                <td>50</td>
+                <td>Avena de la marca Quaker</td>
+            </tr>
+        </table>
+        
+        <h2 id="enlatados">Enlatados y Conservas</h2> 
+        <div class="accordion accordion-flush" id="accordionFlushEnlatados">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEnlatados" aria-expanded="false" aria-controls="flush-collapseEnlatados">
+                    <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de enlatados y conservas!</strong></p> 
+                </button>
+              </h2>
+              <div id="flush-collapseEnlatados" class="accordion-collapse collapse" data-bs-parent="#accordionFlushEnlatados">
+                <div class="accordion-body"> 
+                    <p>
+                        Explora nuestra selección de alimentos 
+                        enlatados y conservas de alta calidad, 
+                        perfectos para mantener tu despensa 
+                        bien surtida y preparada para cualquier
+                        ocasión.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Enlatados y Conservas -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Atún enlatado (Bumble Bee)</td>
+                <td>Lata</td>
+                <td>1.99</td>
+                <td>40</td>
+                <td>Atún enlatado de la marca Bumble Bee</td>
+            </tr>
+            <tr>
+                <td>Sopas enlatadas (Campbell's)</td>
+                <td>Lata</td>
+                <td>1.25</td>
+                <td>60</td>
+                <td>Sopas enlatadas de la marca Campbell's</td>
+            </tr>
+            <tr>
+                <td>Tomate triturado (Hunt's)</td>
+                <td>Lata</td>
+                <td>0.99</td>
+                <td>30</td>
+                <td>Tomate triturado de la marca Hunt's</td>
+            </tr>
+            <tr>
+                <td>Legumbres enlatadas (Bush's)</td>
+                <td>Lata</td>
+                <td>1.50</td>
+                <td>25</td>
+                <td>Legumbres enlatadas de la marca Bush's</td>
+            </tr>
+        </table>
+      
+        <h2 id="dulces">Dulces y Snacks</h2>
+        <div class="accordion accordion-flush" id="accordionFlushDulces">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDulces" aria-expanded="false" aria-controls="flush-collapseDulces">
+                    <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de dulces y snacks!</strong></p> 
+                </button>
+              </h2>
+              <div id="flush-collapseDulces" class="accordion-collapse collapse" data-bs-parent="#accordionFlushDulces">
+                <div class="accordion-body"> 
+                    <p>
+                        Explora nuestra variedad de golosinas 
+                        y snacks deliciosos, perfectos para 
+                        satisfacer tus antojos dulces en cualquier
+                        momento del día. ¡Descubre tus dulces favoritos 
+                        y disfruta de momentos de placer con nuestros
+                        deliciosos snacks!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Dulces y Snacks -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Chocolate (Hershey's)</td>
+                <td>Barra</td>
+                <td>2.49</td>
+                <td>50</td>
+                <td>Chocolate de la marca Hershey's</td>
+            </tr>
+            <tr>
+                <td>Galletas (Nabisco)</td>
+                <td>Paquete</td>
+                <td>1.99</td>
+                <td>40</td>
+                <td>Galletas de la marca Nabisco</td>
+            </tr>
+            <tr>
+                <td>Papas fritas (Lay's)</td>
+                <td>Bolsa</td>
+                <td>1.75</td>
+                <td>60</td>
+                <td>Papas fritas de la marca Lay's</td>
+            </tr>
+            <tr>
+                <td>Caramelos (Snickers)</td>
+                <td>Barra</td>
+                <td>0.99</td>
+                <td>30</td>
+                <td>Caramelos de la marca Snickers</td>
+            </tr>
+        </table>
+        
+        <h2 id="limpieza">Productos de Limpieza</h2>
+        <div class="accordion accordion-flush" id="accordionFlushLimpieza">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLimpieza" aria-expanded="false" aria-controls="flush-collapseLimpieza">
+                    <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de productos de limpieza!</strong></p> 
+                </button>
+              </h2>
+              <div id="flush-collapseLimpieza" class="accordion-collapse collapse" data-bs-parent="#accordionFlushLimpieza">
+                <div class="accordion-body"> 
+                    <p> 
+                        Descubre nuestra amplia gama de 
+                        productos diseñados para mantener 
+                        tu hogar limpio y saludable. Tenemos 
+                        todo lo que necesitas para un 
+                        ambiente impecable.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+            
+        <!-- Productos de Limpieza -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Detergente (Tide)</td>
+                <td>Botella</td>
+                <td>5.99</td>
+                <td>20</td>
+                <td>Detergente de la marca Tide</td>
+            </tr>
+            <tr>
+                <td>Jabón para platos (Dawn)</td>
+                <td>Botella</td>
+                <td>2.49</td>
+                <td>35</td>
+                <td>Jabón para platos de la marca Dawn</td>
+            </tr>
+            <tr>
+                <td>Limpiadores multiusos (Clorox)</td>
+                <td>Botella</td>
+                <td>3.99</td>
+                <td>25</td>
+                <td>Limpiadores multiusos de la marca Clorox</td>
+            </tr>
+        </table>
+       
+        <h2 id="lacteos">Lácteos</h2>
+        <div class="accordion accordion-flush" id="accordionFlushLacteos">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLacteos" aria-expanded="false" aria-controls="flush-collapseLacteos">
+                    <p style="text-align: center"><strong>¡Bienvenido a nuestra sección de lácteos!</strong></p> 
+                </button> 
+              </h2>
+              <div id="flush-collapseLacteos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushLacteos">
+                <div class="accordion-body"> 
+                        <p> Descubre nuestra amplia variedad de    
+                            productos lácteos frescos y de alta calidad. 
+                            Desde leche fresca hasta una variedad de quesos y yogures.</p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!-- Lácteos -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Leche (DairyPure)</td>
+                <td>Litro</td>
+                <td>1.49</td>
+                <td>60</td>
+                <td>Leche de la marca DairyPure</td>
+            </tr>
+            <tr>
+                <td>Queso (Kraft)</td>
+                <td>Gramo</td>
+                <td>0.05</td>
+                <td>75</td>
+                <td>Queso de la marca Kraft</td>
+            </tr>
+            <tr>
+                <td>Yogur (Chobani)</td>
+                <td>Pieza</td>
+                <td>0.99</td>
+                <td>45</td>
+                <td>Yogur de la marca Chobani</td>
+            </tr>
+        </table>
+    </div>
+        
+        <p><mark>Aquí encontrarás el stock disponible en nuestros productos. Para un
+                entorno con mejor facilidad y
+                accesibilidad antes de ir al punto de venta para conseguir tus
+                productos. <em>¡Asegura tu mandado!</em></mark>
+        </p>
+    </div>
+    <!--Contenedor de Ubicación GoogleMaps-->
+    <div id="ubikcion" style="text-align: center;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.7602707050046!2d-103.40582662573239!3d19.66821573311602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f85086c4dc443%3A0x467546df8bc06aec!2sMiguel%20de%20la%20Madrid%2028%2C%2049615%20El%20Rinc%C3%B3n%2C%20Jal.!5e1!3m2!1ses-419!2smx!4v1712724004530!5m2!1ses-419!2smx"
+            width="100%"
+            height="450"
+            style="border:0; display: block; margin: auto;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+    <!--Contenedor de Ubicación GoogleMaps-->
+    <footer>
+        <p>CopyRight &copy: 2024 Todos los derechos reservados | Página Oficial | Para más
+            consultas en nuestras redes sociales</p>
+            <!-- Enlaces con iconos -->
+        <div class="social-icons-container">
+            <a href="#" target="_blank">
+                <img class="social-icon" src="src/whatsapp.webp" alt="Whatsapp">
+            </a>
+            <a href="https://web.facebook.com/ComercializadoraLosAngelesdelCielo/?_rdc=1&_rdr" target="_blank">
+                <img class="social-icon" src="src/facebook.png" alt="Facebook">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
